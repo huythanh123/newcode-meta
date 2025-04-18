@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Meta Careers</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"></link>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <div class="bg-white py-2">
+        <div class="container mx-auto px-4 flex items-center justify-between">
+            <div class="flex items-center">
+                <img src="./images/logo.svg" alt="Meta Logo" class="h-6 mr-2">
+                <a href="#" class="text-gray-700 hover:text-blue-500">Jobs</a>
+                <a href="#" class="text-gray-700 hover:text-blue-500 ml-4">Teams</a>
+                <a href="#" class="text-gray-700 hover:text-blue-500 ml-4">Career Programs</a>
+                <a href="#" class="text-gray-700 hover:text-blue-500 ml-4">Working at Meta</a>
+                <a href="#" class="text-gray-700 hover:text-blue-500 ml-4">Blog</a>
+            </div>
+            <div>
+                <a href="#" class="text-gray-700 hover:text-blue-500 mr-4">Log In/Create profile</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="container mx-auto mt-12 px-4">
+        <h1 class="text-3xl font-semibold text-gray-800 mb-6">Search Meta Careers</h1>
+        <div class="flex items-center mb-4">
+            <input type="text" placeholder="Search by technology, team, location or ref. code" class="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-200">
+            <button class="ml-2 px-4 py-2 bg-gray-100 text-gray-700 rounded-md hover:bg-gray-200 focus:outline-none">
+                <i class="fas fa-search"></i>
+            </button>
+        </div>
+
+        <div class="flex">
+            <div class="w-1/4 pr-4">
+                <button class="text-blue-500 font-semibold mb-4">Illde filters</button>
+
+                <div class="border rounded-md p-4 bg-white">
+                    <div class="flex items-center justify-between mb-2">
+                        <span class="text-sm font-medium text-gray-700">+ Save this search</span>
+                    </div>
+
+                    <div class="mb-4">
+                        <h3 class="text-sm font-medium text-gray-700 mb-2">Sort by</h3>
+                        <div class="flex items-center">
+                            <input type="radio" id="relevance" name="sort_by" class="mr-2">
+                            <label for="relevance" class="text-sm text-gray-700">Relevance</label>
+                        </div>
+                        <div class="flex items-center">
+                            <input type="radio" id="newest" name="sort_by" class="mr-2">
+                            <label for="newest" class="text-sm text-gray-700">Newest</label>
+                        </div>
+                    </div>
+
+                    <div class="mb-4">
+                        <h3 class="text-sm font-medium text-gray-700 mb-2">Technologies</h3>
+                        <div class="flex flex-wrap">
+                            <button class="bg-gray-100 text-gray-700 rounded-full px-3 py-1 text-xs mr-2 mb-2 hover:bg-gray-200">Facebook</button>
+                            <button class="bg-gray-100 text-gray-700 rounded-full px-3 py-1 text-xs mr-2 mb-2 hover:bg-gray-200">Messenger</button>
+                            <button class="bg-gray-100 text-gray-700 rounded-full px-3 py-1 text-xs mr-2 mb-2 hover:bg-gray-200">Instagram</button>
+                            <button class="bg-gray-100 text-gray-700 rounded-full px-3 py-1 text-xs mr-2 mb-2 hover:bg-gray-200">WhatsApp</button>
+                            <button class="bg-gray-100 text-gray-700 rounded-full px-3 py-1 text-xs mr-2 mb-2 hover:bg-gray-200">Meta Quest</button>
+                            <button class="bg-gray-100 text-gray-700 rounded-full px-3 py-1 text-xs mr-2 mb-2 hover:bg-gray-200">Threads</button>
+                        </div>
+                    </div>
+
+                    <div class="mb-4">
+                        <h3 class="text-sm font-medium text-gray-700 mb-2">Teams</h3>
+                        <div class="flex flex-wrap">
+                            <button class="bg-gray-100 text-gray-700 rounded-full px-3 py-1 text-xs mr-2 mb-2 hover:bg-gray-200">Advertising Technology</button>
+                            <button class="bg-gray-100 text-gray-700 rounded-full px-3 py-1 text-xs mr-2 mb-2 hover:bg-gray-200">AR/VR</button>
+                            <button class="bg-gray-100 text-gray-700 rounded-full px-3 py-1 text-xs mr-2 mb-2 hover:bg-gray-200">Artificial Intelligence</button>
+                            <button class="bg-gray-100 text-gray-700 rounded-full px-3 py-1 text-xs mr-2 mb-2 hover:bg-gray-200">Business Development & Partnerships</button>
+                            <button class="bg-gray-100 text-gray-700 rounded-full px-3 py-1 text-xs mr-2 mb-2 hover:bg-gray-200">Communications & Public Policy</button>
+                        </div>
+                        <button class="text-blue-500 text-xs">+ Show more</button>
+                    </div>
+
+                    <div class="mb-4">
+                        <h3 class="text-sm font-medium text-gray-700 mb-2">Lmployment Type</h3>
+                        <div class="flex items-center">
+                            <input type="checkbox" id="full_time" class="mr-2">
+                            <label for="full_time" class="text-sm text-gray-700">Full time employment</label>
+                        </div>
+                        <div class="flex items-center">
+                            <input type="checkbox" id="internship" class="mr-2">
+                            <label for="internship" class="text-sm text-gray-700">Internship</label>
+                        </div>
+                        <div class="flex items-center">
+                            <input type="checkbox" id="short_term" class="mr-2">
+                            <label for="short_term" class="text-sm text-gray-700">Short term employment</label>
+                        </div>
+                    </div>
+
+                    <div>
+                        <h3 class="text-sm font-medium text-gray-700 mb-2">Location</h3>
+                        <div class="flex items-center mb-2">
+                            <input type="text" placeholder="Search" class="w-full px-2 py-1 border rounded-md text-xs focus:outline-none focus:ring-2 focus:ring-blue-200">
+                            <button class="ml-2 px-2 py-1 bg-gray-100 text-gray-700 rounded-md hover:bg-gray-200 focus:outline-none">
+                                <i class="fas fa-search"></i>
+                            </button>
+                        </div>
+                        <div class="flex flex-wrap">
+                            <button class="bg-gray-100 text-gray-700 rounded-full px-3 py-1 text-xs mr-2 mb-2 hover:bg-gray-200">United States</button>
+                            <button class="bg-gray-100 text-gray-700 rounded-full px-3 py-1 text-xs mr-2 mb-2 hover:bg-gray-200">France</button>
+                            <button class="bg-gray-100 text-gray-700 rounded-full px-3 py-1 text-xs mr-2 mb-2 hover:bg-gray-200">Spain</button>
+                            <button class="bg-gray-100 text-gray-700 rounded-full px-3 py-1 text-xs mr-2 mb-2 hover:bg-gray-200">Germany</button>
+                            <button class="bg-gray-100 text-gray-700 rounded-full px-3 py-1 text-xs mr-2 mb-2 hover:bg-gray-200">Italy</button>
+                        </div>
+                    </div>
+
+                    <div class="mt-4">
+                        <button class="bg-blue-500 text-white rounded-md px-4 py-2 text-sm hover:bg-blue-600">Apply Filters</button>
+                        <button class="text-blue-500 text-sm ml-2">Clear Filters</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="w-3/4">
+                <p class="text-sm text-gray-700 mb-4">20 items</p>
+
+                <div class="bg-white rounded-md shadow-sm mb-4">
+                    <div class="p-4">
+                        <div class="flex justify-between items-start">
+                            <div>
+                                <h2 class="text-lg font-semibold text-gray-800">Senior Account Manager</h2>
+                                <p class="text-sm text-gray-600">Global · Marketing & Advertising · Social Media</p>
+                                <div class="flex flex-wrap mt-2">
+                                    <button class="bg-gray-100 text-gray-700 rounded-full px-3 py-1 text-xs mr-2 mb-2 hover:bg-gray-200">Strategic Accounts</button>
+                                    <button class="bg-gray-100 text-gray-700 rounded-full px-3 py-1 text-xs mr-2 mb-2 hover:bg-gray-200">Client Retention</button>
+                                    <button class="bg-gray-100 text-gray-700 rounded-full px-3 py-1 text-xs mr-2 mb-2 hover:bg-gray-200">Revenue Growth</button>
+                                    <button class="bg-gray-100 text-gray-700 rounded-full px-3 py-1 text-xs mr-2 mb-2 hover:bg-gray-200">Contract Negotiation</button>
+                                    <button class="bg-gray-100 text-gray-700 rounded-full px-3 py-1 text-xs mr-2 mb-2 hover:bg-gray-200">Team Leadership</button>
+                                </div>
+                            </div>
+                            <button class="text-gray-400 hover:text-gray-600 focus:outline-none">
+                                <i class="far fa-bookmark"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-md shadow-sm mb-4">
+                    <div class="p-4">
+                        <div class="flex justify-between items-start">
+                            <div>
+                                <h2 class="text-lg font-semibold text-gray-800">Account Manager</h2>
+                                <p class="text-sm text-gray-600">Global · Marketing & Advertising · Social Media</p>
+                                <div class="flex flex-wrap mt-2">
+                                    <button class="bg-gray-100 text-gray-700 rounded-full px-3 py-1 text-xs mr-2 mb-2 hover:bg-gray-200">Client Relations</button>
+                                    <button class="bg-gray-100 text-gray-700 rounded-full px-3 py-1 text-xs mr-2 mb-2 hover:bg-gray-200">Account Strategy</button>
+                                    <button class="bg-gray-100 text-gray-700 rounded-full px-3 py-1 text-xs mr-2 mb-2 hover:bg-gray-200">Upselling</button>
+                                    <button class="bg-gray-100 text-gray-700 rounded-full px-3 py-1 text-xs mr-2 mb-2 hover:bg-gray-200">Performance Reporting</button>
+                                    <button class="bg-gray-100 text-gray-700 rounded-full px-3 py-1 text-xs mr-2 mb-2 hover:bg-gray-200">Customer Success</button>
+                                </div>
+                            </div>
+                            <button class="text-gray-400 hover:text-gray-600 focus:outline-none">
+                                <i class="far fa-bookmark"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-md shadow-sm mb-4">
+                    <div class="p-4">
+                        <div class="flex justify-between items-start">
+                            <div>
+                                <h2 class="text-lg font-semibold text-gray-800">Chief Marketing Officer</h2>
+                                <p class="text-sm text-gray-600">Global · Marketing & Advertising · Social Media</p>
+                                <div class="flex flex-wrap mt-2">
+                                    <button class="bg-gray-100 text-gray-700 rounded-full px-3 py-1 text-xs mr-2 mb-2 hover:bg-gray-200">Brand Strategy</button>
+                                    <button class="bg-gray-100 text-gray-700 rounded-full px-3 py-1 text-xs mr-2 mb-2 hover:bg-gray-200">Marketing Leadership</button>
+                                    <button class="bg-gray-100 text-gray-700 rounded-full px-3 py-1 text-xs mr-2 mb-2 hover:bg-gray-200">Budget Oversight</button>
+                                    <button class="bg-gray-100 text-gray-700 rounded-full px-3 py-1 text-xs mr-2 mb-2 hover:bg-gray-200">Cross-Functional Collaboration</button>
+                                    <button class="bg-gray-100 text-gray-700 rounded-full px-3 py-1 text-xs mr-2 mb-2 hover:bg-gray-200">Market Expansion</button>
+                                </div>
+                            </div>
+                            <button class="text-gray-400 hover:text-gray-600 focus:outline-none">
+                                <i class="far fa-bookmark"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-md shadow-sm mb-4">
+                    <div class="p-4">
+                        <div class="flex justify-between items-start">
+                            <div>
+                                <h2 class="text-lg font-semibold text-gray-800">Chief Operating Officer</h2>
+                                <p class="text-sm text-gray-600">Global · Marketing & Advertising · Social Media</p>
+                                <div class="flex flex-wrap mt-2">
+                                    <button class="bg-gray-100 text-gray-700 rounded-full px-3 py-1 text-xs mr-2 mb-2 hover:bg-gray-200">Operational Efficiency</button>
+                                    <button class="bg-gray-100 text-gray-700 rounded-full px-3 py-1 text-xs mr-2 mb-2 hover:bg-gray-200">Process Optimization</button>
+                                    <button class="bg-gray-100 text-gray-700 rounded-full px-3 py-1 text-xs mr-2 mb-2 hover:bg-gray-200">Team Leadership</button>
+                                    <button class="bg-gray-100 text-gray-700 rounded-full px-3 py-1 text-xs mr-2 mb-2 hover:bg-gray-200">Strategic Planning</button>
+                                    <button class="bg-gray-100 text-gray-700 rounded-full px-3 py-1 text-xs mr-2 mb-2 hover:bg-gray-200">Scalability</button>
+                                </div>
+                            </div>
+                            <button class="text-gray-400 hover:text-gray-600 focus:outline-none">
+                                <i class="far fa-bookmark"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-md shadow-sm mb-4">
+                    <div class="p-4">
+                        <div class="flex justify-between items-start">
+                            <div>
+                                <h2 class="text-lg font-semibold text-gray-800">Content Manager</h2>
+                                <p class="text-sm text-gray-600">Global · Marketing & Advertising · Social Media</p>
+                                <div class="flex flex-wrap mt-2">
+                                    <button class="bg-gray-100 text-gray-700 rounded-full px-3 py-1 text-xs mr-2 mb-2 hover:bg-gray-200">Content Strategy</button>
+                                    <button class="bg-gray-100 text-gray-700 rounded-full px-3 py-1 text-xs mr-2 mb-2 hover:bg-gray-200">Editorial Calendar</button>
+                                    <button class="bg-gray-100 text-gray-700 rounded-full px-3 py-1 text-xs mr-2 mb-2 hover:bg-gray-200">SEO Optimization</button>
+                                    <button class="bg-gray-100 text-gray-700 rounded-full px-3 py-1 text-xs mr-2 mb-2 hover:bg-gray-200">Copywriting</button>
+                                    <button class="bg-gray-100 text-gray-700 rounded-full px-3 py-1 text-xs mr-2 mb-2 hover:bg-gray-200">Multimedia Production</button>
+                                </div>
+                            </div>
+                            <button class="text-gray-400 hover:text-gray-600 focus:outline-none">
+                                <i class="far fa-bookmark"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-md shadow-sm mb-4">
+                    <div class="p-4">
+                        <div class="flex justify-between items-start">
+                            <div>
+                                <h2 class="text-lg font-semibold text-gray-800">Creative Director</h2>
+                                <p class="text-sm text-gray-600">Global · Marketing & Advertising · Social Media</p>
+                                <div class="flex flex-wrap mt-2">
+                                    <button class="bg-gray-100 text-gray-700 rounded-full px-3 py-1 text-xs mr-2 mb-2 hover:bg-gray-200">Creative Strategy</button>
+                                    <button class="bg-gray-100 text-gray-700 rounded-full px-3 py-1 text-xs mr-2 mb-2 hover:bg-gray-200">Brand Identity</button>
+                                    <button class="bg-gray-100 text-gray-700 rounded-full px-3 py-1 text-xs mr-2 mb-2 hover:bg-gray-200">Visual Design</button>
+                                    <button class="bg-gray-100 text-gray-700 rounded-full px-3 py-1 text-xs mr-2 mb-2 hover:bg-gray-200">Campaign Ideation</button>
+                                    <button class="bg-gray-100 text-gray-700 rounded-full px-3 py-1 text-xs mr-2 mb-2 hover:bg-gray-200">Team Mentorship</button>
+                                </div>
+                            </div>
+                            <button class="text-gray-400 hover:text-gray-600 focus:outline-none">
+                                <i class="far fa-bookmark"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-md shadow-sm mb-4">
+                    <div class="p-4">
+                        <div class="flex justify-between items-start">
+                            <div>
+                                <h2 class="text-lg font-semibold text-gray-800">Digital Marketing Director</h2>
+                                <p class="text-sm text-gray-600">Global · Marketing & Advertising · Social Media</p>
+                                <div class="flex flex-wrap mt-2">
+                                    <button class="bg-gray-100 text-gray-700 rounded-full px-3 py-1 text-xs mr-2 mb-2 hover:bg-gray-200">Digital Strategy</button>
+                                    <button class="bg-gray-100 text-gray-700 rounded-full px-3 py-1 text-xs mr-2 mb-2 hover:bg-gray-200">ROI Optimization</button>
+                                    <button class="bg-gray-100 text-gray-700 rounded-full px-3 py-1 text-xs mr-2 mb-2 hover:bg-gray-200">Omnichannel Campaigns</button>
+                                    <button class="bg-gray-100 text-gray-700 rounded-full px-3 py-1 text-xs mr-2 mb-2 hover:bg-gray-200">Marketing Automation</button>
+                                    <button class="bg-gray-100 text-gray-700 rounded-full px-3 py-1 text-xs mr-2 mb-2 hover:bg-gray-200">Data-Driven Decisions</button>
+                                </div>
+                            </div>
+                            <button class="text-gray-400 hover:text-gray-600 focus:outline-none">
+                                <i class="far fa-bookmark"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-md shadow-sm mb-4">
+                    <div class="p-4">
+                        <div class="flex justify-between items-start">
+                            <div>
+                                <h2 class="text-lg font-semibold text-gray-800">Director of Digital Communications</h2>
+                                <p class="text-sm text-gray-600">Global · Marketing & Advertising · Social Media</p>
+                                <div class="flex flex-wrap mt-2">
+                                    <button class="bg-gray-100 text-gray-700 rounded-full px-3 py-1 text-xs mr-2 mb-2 hover:bg-gray-200">Communication Strategy</button>
+                                    <button class="bg-gray-100 text-gray-700 rounded-full px-3 py-1 text-xs mr-2 mb-2 hover:bg-gray-200">Crisis Management</button>
+                                    <button class="bg-gray-100 text-gray-700 rounded-full px-3 py-1 text-xs mr-2 mb-2 hover:bg-gray-200">PR Campaigns</button>
+                                    <button class="bg-gray-100 text-gray-700 rounded-full px-3 py-1 text-xs mr-2 mb-2 hover:bg-gray-200">Stakeholder Engagement</button>
+                                    <button class="bg-gray-100 text-gray-700 rounded-full px-3 py-1 text-xs mr-2 mb-2 hover:bg-gray-200">Content Distribution</button>
+                                </div>
+                            </div>
+                            <button class="text-gray-400 hover:text-gray-600 focus:outline-none">
+                                <i class="far fa-bookmark"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-md shadow-sm mb-4">
+                    <div class="p-4">
+                        <div class="flex justify-between items-start">
+                            <div>
+                                <h2 class="text-lg font-semibold text-gray-800">Director of Marketing</h2>
+                                <p class="text-sm text-gray-600">Global · Marketing & Advertising · Social Media</p>
+                                <div class="flex flex-wrap mt-2">
+                                    <button class="bg-gray-100 text-gray-700 rounded-full px-3 py-1 text-xs mr-2 mb-2 hover:bg-gray-200">Integrated Campaigns</button>
+                                    <button class="bg-gray-100 text-gray-700 rounded-full px-3 py-1 text-xs mr-2 mb-2 hover:bg-gray-200">Brand Positioning</button>
+                                    <button class="bg-gray-100 text-gray-700 rounded-full px-3 py-1 text-xs mr-2 mb-2 hover:bg-gray-200">Market Research</button>
+                                    <button class="bg-gray-100 text-gray-700 rounded-full px-3 py-1 text-xs mr-2 mb-2 hover:bg-gray-200">Budget Management</button>
+                                    <button class="bg-gray-100 text-gray-700 rounded-full px-3 py-1 text-xs mr-2 mb-2 hover:bg-gray-200">Team Leadership</button>
+                                </div>
+                            </div>
+                            <button class="text-gray-400 hover:text-gray-600 focus:outline-none">
+                                <i class="far fa-bookmark"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-md shadow-sm mb-4">
+                    <div class="p-4">
+                        <div class="flex justify-between items-start">
+                            <div>
+                                <h2 class="text-lg font-semibold text-gray-800">Head of Marketing</h2>
+                                <p class="text-sm text-gray-600">Global · Marketing & Advertising · Social Media</p>
+                                <div class="flex flex-wrap mt-2">
+                                    <button class="bg-gray-100 text-gray-700 rounded-full px-3 py-1 text-xs mr-2 mb-2 hover:bg-gray-200">Brand Vision</button>
+                                    <button class="bg-gray-100 text-gray-700 rounded-full px-3 py-1 text-xs mr-2 mb-2 hover:bg-gray-200">Revenue Growth</button>
+                                    <button class="bg-gray-100 text-gray-700 rounded-full px-3 py-1 text-xs mr-2 mb-2 hover:bg-gray-200">Innovation</button>
+                                    <button class="bg-gray-100 text-gray-700 rounded-full px-3 py-1 text-xs mr-2 mb-2 hover:bg-gray-200">Cross-Department Collaboration</button>
+                                    <button class="bg-gray-100 text-gray-700 rounded-full px-3 py-1 text-xs mr-2 mb-2 hover:bg-gray-200">Performance Metrics</button>
+                                </div>
+                            </div>
+                            <button class="text-gray-400 hover:text-gray-600 focus:outline-none">
+                                <i class="far fa-bookmark"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-md shadow-sm mb-4">
+                    <div class="p-4">
+                        <div class="flex justify-between items-start">
+                            <div>
+                                <h2 class="text-lg font-semibold text-gray-800">Director of Social Media</h2>
+                                <p class="text-sm text-gray-600">Global · Marketing & Advertising · Social Media</p>
+                                <div class="flex flex-wrap mt-2">
+                                    <button class="bg-gray-100 text-gray-700 rounded-full px-3 py-1 text-xs mr-2 mb-2 hover:bg-gray-200">Social Strategy</button>
+                                    <button class="bg-gray-100 text-gray-700 rounded-full px-3 py-1 text-xs mr-2 mb-2 hover:bg-gray-200">Audience Growth</button>
+                                    <button class="bg-gray-100 text-gray-700 rounded-full px-3 py-1 text-xs mr-2 mb-2 hover:bg-gray-200">Influencer Partnerships</button>
+                                    <button class="bg-gray-100 text-gray-700 rounded-full px-3 py-1 text-xs mr-2 mb-2 hover:bg-gray-200">Platform Analytics</button>
+                                    <button class="bg-gray-100 text-gray-700 rounded-full px-3 py-1 text-xs mr-2 mb-2 hover:bg-gray-200">Crisis Response</button>
+                                </div>
+                            </div>
+                            <button class="text-gray-400 hover:text-gray-600 focus:outline-none">
+                                <i class="far fa-bookmark"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-md shadow-sm mb-4">
+                    <div class="p-4">
+                        <div class="flex justify-between items-start">
+                            <div>
+                                <h2 class="text-lg font-semibold text-gray-800">Senior Digital Marketing Manager</h2>
+                                <p class="text-sm text-gray-600">Global · Marketing & Advertising · Social Media</p>
+                                <div class="flex flex-wrap mt-2">
+                                    <button class="bg-gray-100 text-gray-700 rounded-full px-3 py-1 text-xs mr-2 mb-2 hover:bg-gray-200">Paid Media</button>
+                                    <button class="bg-gray-100 text-gray-700 rounded-full px-3 py-1 text-xs mr-2 mb-2 hover:bg-gray-200">SEO/SEM</button>
+                                    <button class="bg-gray-100 text-gray-700 rounded-full px-3 py-1 text-xs mr-2 mb-2 hover:bg-gray-200">Conversion Funnels</button>
+                                    <button class="bg-gray-100 text-gray-700 rounded-full px-3 py-1 text-xs mr-2 mb-2 hover:bg-gray-200">Customer Acquisition</button>
+                                    <button class="bg-gray-100 text-gray-700 rounded-full px-3 py-1 text-xs mr-2 mb-2 hover:bg-gray-200">A/B Testing</button>
+                                </div>
+                            </div>
+                            <button class="text-gray-400 hover:text-gray-600 focus:outline-none">
+                                <i class="far fa-bookmark"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>     
+        <div class="bg-white rounded-md shadow-sm mb-4">
+                    <div class="p-4">
+                        <div class="flex justify-between items-start">
+                            <div>
+                                <h2 class="text-lg font-semibold text-gray-800">Digital Marketing Manager</h2>
+                                <p class="text-sm text-gray-600">Global · Marketing & Advertising · Social Media</p>
+                                <div class="flex flex-wrap mt-2">
+                                    <button class="bg-gray-100 text-gray-700 rounded-full px-3 py-1 text-xs mr-2 mb-2 hover:bg-gray-200">Campaign Execution</button>
+                                    <button class="bg-gray-100 text-gray-700 rounded-full px-3 py-1 text-xs mr-2 mb-2 hover:bg-gray-200">Social Ads</button>
+                                    <button class="bg-gray-100 text-gray-700 rounded-full px-3 py-1 text-xs mr-2 mb-2 hover:bg-gray-200">Email Marketing</button>
+                                    <button class="bg-gray-100 text-gray-700 rounded-full px-3 py-1 text-xs mr-2 mb-2 hover:bg-gray-200">Performance Tracking</button>
+                                    <button class="bg-gray-100 text-gray-700 rounded-full px-3 py-1 text-xs mr-2 mb-2 hover:bg-gray-200">Lead Generation</button>
+                                </div>
+                            </div>
+                            <div class="w-full">
+                                <div class="flex justify-center items-center py-4">
+                                    <span class="text-gray-500 mr-2"><i class="fas fa-chevron-left fa-xs"></i> Previous</span>
+                                    <span class="text-gray-500">Page 1 of 7</span>
+                                    <span class="text-gray-500 ml-2">Next <i class="fas fa-chevron-right fa-xs"></i></span>
+                                </div>
+                                <div class="bg-gray-50 py-12">
+                                    <div class="container mx-auto px-4">
+                                        <div class="flex items-center justify-between border-b border-gray-200 py-4">
+                                            <div class="flex items-center">
+                                                <img src="https://placehold.co/20x20/png" alt="Meta Logo" class="mr-2">
+                                                <a href="#" class="text-gray-500">Meta</a>
+                                                <span class="mx-2 text-gray-500">|</span>
+                                                <a href="#" class="text-gray-500">Careers</a>
+                                            </div>
+                                            <div class="flex items-center">
+                                                <span class="text-gray-500 mr-2">Follow us</span>
+                                                <a href="#" class="text-gray-500 hover:text-blue-500"><img src="https://placehold.co/20x20/png" alt="LinkedIn logo" class="rounded-full"></a>
+                                                <a href="#" class="text-gray-500 hover:text-blue-500"><img src="https://placehold.co/20x20/png" alt="Instagram logo" class="rounded-full"></a>
+                                                <a href="#" class="text-gray-500 hover:text-blue-500"><img src="https://placehold.co/20x20/png" alt="Facebook logo" class="rounded-full"></a>
+                                                <a href="#" class="text-gray-500 hover:text-blue-500"><img src="https://placehold.co/20x20/png" alt="Glassdoor logo" class="rounded-full"></a>
+                                                <a href="#" class="text-gray-500 hover:text-blue-500"><img src="https://placehold.co/20x20/png" alt="Twitter logo" class="rounded-full"></a>
+                                                <a href="#" class="text-gray-500 hover:text-blue-500"><img src="https://placehold.co/20x20/png" alt="YouTube logo" class="rounded-full"></a>
+                                                <a href="#" class="text-gray-500 hover:text-blue-500"><img src="https://placehold.co/20x20/png" alt="X logo" class="rounded-full"></a>
+                                            </div>
+                                        </div>
+                                        <div class="grid grid-cols-4 gap-8 py-8">
+                                            <div>
+                                                <h3 class="text-gray-700 font-medium mb-2">Job search</h3>
+                                                <ul>
+                                                    <li><a href="#" class="text-gray-500 block hover:underline mb-1">Career programs</a></li>
+                                                    <li><a href="#" class="text-gray-500 block hover:underline mb-1">Students and grads</a></li>
+                                                    <li><a href="#" class="text-gray-500 block hover:underline">Rotational Product Management</a></li>
+                                                </ul>
+                                            </div>
+                                            <div>
+                                                <h3 class="text-gray-700 font-medium mb-2">Teams</h3>
+                                                <ul>
+                                                    <li><a href="#" class="text-gray-500 block hover:underline mb-1">Business teams</a></li>
+                                                    <li><a href="#" class="text-gray-500 block hover:underline">Technology teams</a></li>
+                                                </ul>
+                                                <h3 class="text-gray-700 font-medium mt-4 mb-2">Working at Meta</h3>
+                                                <ul>
+                                                    <li><a href="#" class="text-gray-500 block hover:underline mb-1">Benefits</a></li>
+                                                    <li><a href="#" class="text-gray-500 block hover:underline mb-1">Culture</a></li>
+                                                    <li><a href="#" class="text-gray-500 block hover:underline mb-1">Diversity</a></li>
+                                                    <li><a href="#" class="text-gray-500 block hover:underline">Hiring process</a></li>
+                                                </ul>
+                                            </div>
+                                            <div>
+                                                <h3 class="text-gray-700 font-medium mb-2">My account</h3>
+                                                <ul>
+                                                    <li><a href="#" class="text-gray-500 block hover:underline mb-1">Career profile</a></li>
+                                                    <li><a href="#" class="text-gray-500 block hover:underline mb-1">Account settings</a></li>
+                                                    <li><a href="#" class="text-gray-500 block hover:underline mb-1">Messages</a></li>
+                                                    <li><a href="#" class="text-gray-500 block hover:underline">Meta Careers blog</a></li>
+                                                </ul>
+                                            </div>
+                                            <div>
+                                                <h3 class="text-gray-700 font-medium mb-2">About us</h3>
+                                                <ul>
+                                                    <li><a href="#" class="text-gray-500 block hover:underline mb-1">About Meta</a></li>
+                                                    <li><a href="#" class="text-gray-500 block hover:underline mb-1">Media gallery</a></li>
+                                                    <li><a href="#" class="text-gray-500 block hover:underline mb-1">Brand resources</a></li>
+                                                    <li><a href="#" class="text-gray-500 block hover:underline mb-1">For investors</a></li>
+                                                    <li><a href="#" class="text-gray-500 block hover:underline">Looking for contractor roles?</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="border-b border-gray-200 py-4">
+                                            <h3 class="text-gray-700 font-medium mb-2">Equal Employment Opportunity</h3>
+                                            <p class="text-gray-500 text-sm">Meta is proud to be an Equal Employment Opportunity employer. We do not discriminate based upon race, religion, color, national origin, sex (including pregnancy, childbirth, reproductive health decisions, or related medical conditions), sexual orientation, gender identity, gender expression, age, status as a protected veteran, status as an individual with a disability, genetic information, political views or activity, or other applicable legally protected characteristics. You may view our Equal Employment Opportunity notice here.</p>
+                                            <p class="text-gray-500 text-sm mt-2">Meta is committed to providing reasonable support (called accommodations) in our recruiting processes for candidates with disabilities, long term conditions, mental health conditions or sincerely held religious beliefs, or who are neurodivergent or require pregnancy-related support. If you need assistance or an accommodation due to a disability, fill out the Accommodations request form.</p>
+                                        </div>
+                                        <div class="flex justify-between items-center py-4">
+                                            <p class="text-gray-500 text-xs">© 2024 Meta</p>
+                                            <div class="flex items-center">
+                                                <a href="#" class="text-gray-500 text-xs hover:underline mr-4">Community Standards</a>
+                                                <a href="#" class="text-gray-500 text-xs hover:underline mr-4">Data Policy</a>
+                                                <a href="#" class="text-gray-500 text-xs hover:underline mr-4">Terms</a>
+                                                <a href="#" class="text-gray-500 text-xs hover:underline">Cookie Policy</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+        </div>
+</body>

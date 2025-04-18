@@ -1,4 +1,65 @@
 body {
     font-family: 'Optimistic Display', Helvetica, Arial, sans-serif;
   }
-  
+.custom-icon{
+  border: 1px solid rgb(117, 117, 117);
+  border-radius: 50%;
+  padding: 4px 6px;
+  color: rgb(117, 117, 117);
+}
+.text-next{
+  color: rgb(28, 43, 51);
+  font-size: 16px;
+  font-weight: 500;
+}
+.bgr-footer{
+ background: #F1F4F7 !important;
+}
+.rounded-full-icon{
+  height: 24px;
+  width: 24px;
+
+}
+.hide-filters-btn{
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #0052cc; 
+  color: #ffffff; 
+  font-size: 14px; 
+  font-weight: 500; 
+  padding: 10px 16px; 
+  border-radius: 20px; 
+  border: none; 
+  cursor: pointer; 
+  transition: background-color 0.2s ease; 
+}
+.text-item{
+  display: flex;
+  justify-content: end;
+  align-items: end;
+}
+#job-listings {
+  transition: all 0.3s ease;
+}
+.can-deu-haiben{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.rounded-full{
+  gap: 4px;
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--color-text);
+    line-height: 18px;
+    border: 1px solid rgb(203, 210, 217);
+    border-radius: 8px;
+    padding: 8px 12px;
+    display: inline-block;
+    background: white;
+}
+.cb-radio::after{
+color: black !important;
+background-color: black !important;
+}

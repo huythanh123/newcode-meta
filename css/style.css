@@ -112,6 +112,19 @@ body {
   }
 }
 
+@media (min-width: 1200px) {
+  .custom_contaner_search {
+      max-width: 1200px;
+      padding: 96px 0 !important;
+  }
+}
+
+@media (min-width: 100px) {
+  .custom_contaner_search {
+      max-width: 1200px;
+      padding: 10px 0;
+  }
+}
 
 @media (min-width: 100px) {
   .custom_contaner_footer {
@@ -180,6 +193,8 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  width: 90%;
+  margin: 0 auto;
 }
 .rounded-full{
   gap: 4px !important;

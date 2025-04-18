@@ -128,7 +128,7 @@ body {
 }
 .text-next{
   color: rgb(28, 43, 51);
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 500;
 }
 .bgr-footer{
@@ -178,23 +178,24 @@ body {
     display: inline-block !important;
     background: white !important;
 }
-/* Custom radio button styling */
+
 .cb-radio {
   width: 16px;
   height: 16px;
-  border: 2px solid #6b7280; /* Gray border (matches Tailwind's gray-500) */
-  border-radius: 50%; /* Circular shape */
+  border: 2px solid #6b7280; 
+  border-radius: 50%; 
   position: relative;
-  background-color: #ffffff; /* White background when unchecked */
+  background-color: #ffffff; 
   transition: all 0.2s ease;
+
 }
 
-/* Inner dot (using ::after) */
+
 .cb-radio::after {
   content: "";
   width: 8px;
   height: 8px;
-  background-color: transparent; /* No fill when unchecked */
+  background-color: transparent; 
   border-radius: 50%;
   position: absolute;
   top: 50%;
@@ -203,18 +204,31 @@ body {
   transition: background-color 0.2s ease;
 }
 
-/* Style when the radio button is checked */
+
 input[type="radio"]:checked + label .cb-radio {
-  border: 2px solid #6b7280; /* Keep the gray border when checked */
+  border: 2px solid #6b7280;
 }
 
-/* Inner dot when checked */
 input[type="radio"]:checked + label .cb-radio::after {
-  background-color: #000000; /* Black fill when checked */
+  background-color: #000000; 
 }
+
 .custom-width{
-  width: 100%;
+
+  width: 100% !important;
 }
 .custom-icon-item i{
 font-size: 32px;
 }
+
+.cursor-pointer{
+  font-size: 14px;
+}
+.custom-plus{
+  border: 1px solid rgb(117, 117, 117);
+  border-radius: 50%;
+  color: rgb(138, 149, 162);
+  padding: 2px 6px;
+  margin-right: 5px;
+}
+

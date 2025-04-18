@@ -28,8 +28,9 @@ body {
   width: 100%;
   margin-bottom: 48px;
   font-size: 32px;
-  font-weight: 600;
+  font-weight: 500;
   line-height: 43.2px;
+  font-family: 'Optimistic Display', Helvetica, Arial, sans-serif;
 }
 .home-search__main {
   display: flex;
@@ -37,7 +38,7 @@ body {
   padding: 6px 20px;
   border: 1px solid #67788a;
   border-radius: 45px;
-  width: 90%;
+  width:100%;
   margin: 0 auto;
   position: relative;
   background-color: #fff; 
@@ -214,6 +215,7 @@ input[type="radio"]:checked + label .cb-radio::after {
 }
 
 .custom-width{
+
 
   width: 100% !important;
 }

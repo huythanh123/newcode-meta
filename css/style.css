@@ -1,6 +1,7 @@
 body {
  font-family: 'Optimistic Display', Helvetica, Arial, sans-serif;
 }
+ 
 .header_container {
   max-width: 1200px;
   margin: 0 auto;
@@ -115,7 +116,7 @@ body {
 @media (min-width: 100px) {
   .custom_contaner_footer {
       max-width: 1200px;
-      padding: 0;
+      padding: 0 10px;
   }
 }
 
@@ -128,6 +129,12 @@ body {
     display: none;
   }
 }
+
+.footer_top_image{
+  width: 100px;
+  height: 20px;
+}
+
 .custom-icon{
   border: 1px solid rgb(117, 117, 117);
   border-radius: 50%;
@@ -239,4 +246,9 @@ font-size: 32px;
   padding: 2px 6px;
   margin-right: 5px;
 }
-
+.custom-width{
+  width: 100%;
+}
+.custom-icon-item i{
+font-size: 32px;
+}

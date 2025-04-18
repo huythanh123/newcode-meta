@@ -1,6 +1,6 @@
 body {
-    font-family: 'Optimistic Display', Helvetica, Arial, sans-serif;
-  }
+ font-family: 'Optimistic Display', Helvetica, Arial, sans-serif;
+}
 .header_container {
   max-width: 1200px;
   margin: 0 auto;
@@ -211,4 +211,10 @@ input[type="radio"]:checked + label .cb-radio {
 /* Inner dot when checked */
 input[type="radio"]:checked + label .cb-radio::after {
   background-color: #000000; /* Black fill when checked */
+}
+.custom-width{
+  width: 100%;
+}
+.custom-icon-item i{
+font-size: 32px;
 }

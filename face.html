@@ -18,31 +18,127 @@
 </head>
 
 <body>
-    <div class="bg-white py-2">
-        <div class="container mx-auto px-4 flex items-center justify-between">
-            <div class="flex items-center">
-                <img src="./images/logo.svg" alt="Meta Logo" class="h-6 mr-2">
-                <a href="#" class="text-gray-700 hover:text-blue-500">Jobs</a>
-                <a href="#" class="text-gray-700 hover:text-blue-500 ml-4">Teams</a>
-                <a href="#" class="text-gray-700 hover:text-blue-500 ml-4">Career Programs</a>
-                <a href="#" class="text-gray-700 hover:text-blue-500 ml-4">Working at Meta</a>
-                <a href="#" class="text-gray-700 hover:text-blue-500 ml-4">Blog</a>
-            </div>
-            <div>
-                <a href="#" class="text-gray-700 hover:text-blue-500 mr-4">Log In/Create profile</a>
-            </div>
+    <div class="header_container menu_top">
+        <div
+          class="container custom_contaner flex items-center justify-between md:justify-start md:space-x-6"
+        >
+          <!-- Hamburger menu (hiện ở mobile) -->
+          <div class="md:hidden">
+            <button class="text-gray-700 focus:outline-none">
+              <!-- Biểu tượng hamburger -->
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-6 w-6"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h16M4 18h16"
+                />
+              </svg>
+            </button>
+          </div>
+  
+          <!-- Logo -->
+          <div class="flex justify-center md:justify-start nav_logo">
+            <img src="./images/logo.svg" alt="Meta Logo" class="h-6" />
+          </div>
+  
+          <!-- Icon bên phải (hiện ở mobile) -->
+          <div class="md:hidden">
+            <button class="text-gray-700 focus:outline-none">
+              <!-- Biểu tượng tuỳ ý: user chẳng hạn -->
+              <a href="https://applynow.oculustalentlight.com/login/">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  height="24px"
+                  viewBox="0 -960 960 960"
+                  width="24px"
+                  fill="#000000"
+                >
+                  <path
+                    d="M480-120v-80h280v-560H480v-80h280q33 0 56.5 23.5T840-760v560q0 33-23.5 56.5T760-120H480Zm-80-160-55-58 102-102H120v-80h327L345-622l55-58 200 200-200 200Z"
+                  ></path>
+                </svg>
+              </a>
+            </button>
+          </div>
+  
+          <!-- Menu chính (ẩn ở mobile, hiện ở md trở lên) -->
+          <div class="gap-2 flex-1 hidden md:flex items-center space-x-4 ml-4">
+            <a href="#" class="text-gray-700 text_hover">Jobs</a>
+            <a href="#" class="text-gray-700 text_hover">Teams</a>
+            <a href="#" class="text-gray-700 text_hover">Career Programs</a>
+            <a href="#" class="text-gray-700 text_hover">Working at Meta</a>
+            <a href="#" class="text-gray-700 text_hover">Blog</a>
+          </div>
+  
+          <!-- Login (ẩn ở mobile, hiện ở md trở lên) -->
+          <div class="hidden md:block ml-auto">
+            <a href="#" class="text-gray-700">Log In/Create profile</a>
+          </div>
         </div>
-    </div>
+      </div>
+  
+      <!-- Fullscreen Mobile Menu -->
+      <div
+        id="mobileMenu"
+        class="fixed inset-0 bg-white z-50 hidden flex-col px-6 pt-6 transition-all"
+      >
+        <!-- Close button -->
+        <div class="flex justify-end">
+          <button onclick="toggleMenu()" class="text-gray-800">
+            <svg
+              class="w-6 h-6"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M6 18L18 6M6 6l12 12"
+              ></path>
+            </svg>
+          </button>
+        </div>
+  
+        <!-- Menu items -->
+        <div class="mt-6 space-y-4 text-lg">
+          <a href="#" class="block text-gray-1000">Jobs</a>
+          <a href="#" class="block text-gray-1000">Teams</a>
+          <a href="#" class="block text-gray-1000">Locations</a>
+          <a href="#" class="block text-gray-1000">Career Programs</a>
+          <a href="#" class="block text-gray-1000">Working at Meta</a>
+          <a href="#" class="block text-gray-1000">Blog</a>
+        </div>
+      </div>
+  
+      <div class="custom_contaner mx-auto mt-12 px-4">
+        <h1 class="text-center home-search__main-title">Search Meta Careers</h1>
+        <div class="home-search__main">
+          <input
+            type="text"
+            autocomplete="off"
+            spellcheck="false"
+            placeholder="Search by technology, team, location or ref. code"
+          />
+          <a href="/login" class="home-search__btn">
+            <img
+              src="https://applynow.oculustalentlight.com/assets/images/icon_search.svg"
+              alt=""
+            />
+          </a>
+        </div>
+      </div>
 
     <div class="container mx-auto mt-12 px-4">
-        <h1 class="text-3xl font-semibold text-gray-800 mb-6">Search Meta Careers</h1>
-        <div class="flex items-center mb-4">
-            <input type="text" placeholder="Search by technology, team, location or ref. code"
-                class="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-200">
-            <button class="ml-2 px-4 py-2 bg-gray-100 text-gray-700 rounded-md hover:bg-gray-200 focus:outline-none">
-                <i class="fas fa-search"></i>
-            </button>
-        </div>
 <div class="can-deu-haiben pb-2"> <button id="toggle-filters-btn" class="hide-filters-btn">Hide filters<i class="fas fa-sliders-h ps-2"></i></button> <p class="text-sm text-gray-700 mb-4 text-item">20 items</p></div>
         <div class="flex">
             <div>
@@ -54,13 +150,21 @@
                     <div class="mb-4">
                         <h3 class="text-sm font-medium text-gray-700 mb-2">Sort by</h3>
                         <div class="flex items-center">
-                            <input type="radio" id="relevance" name="sort_by" class="mr-2 cb-radio">
-                            <label for="relevance" class="text-sm text-gray-700">Relevance</label>
-                        </div>
-                        <div class="flex items-center">
-                            <input type="radio" id="newest" name="sort_by" class="mr-2 cb-radio">
-                            <label for="newest" class="text-sm text-gray-700">Newest</label>
-                        </div>
+                            <input type="radio" id="relevance" name="sort_by" class="hidden">
+                            <label for="relevance" class="flex items-center cursor-pointer">
+                              <span class="cb-radio mr-2"></span>
+                              Relevance
+                            </label>
+                          </div>
+                        
+                          <!-- Date Radio Button -->
+                          <div class="flex items-center">
+                            <input type="radio" id="date" name="sort_by" class="hidden">
+                            <label for="date" class="flex items-center cursor-pointer">
+                              <span class="cb-radio mr-2"></span>
+                              Date
+                            </label>
+                          </div>
                     </div>
 
                     <div class="mb-4">

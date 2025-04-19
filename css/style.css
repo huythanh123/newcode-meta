@@ -288,6 +288,7 @@ body {
   width: 100%;
   margin: 0 auto;
 }
+
 .rounded-full{
   gap: 4px !important;
     /* font-size: 13px !important; */
@@ -298,9 +299,8 @@ body {
     border-radius: 8px !important;
     padding: 8px 12px !important;
     display: inline-block !important;
-    background: white !important;
+    background: white;
 }
-
 .cb-radio {
   width: 16px;
   height: 16px;
@@ -674,4 +674,7 @@ font-size: 32px;
   color: rgb(103, 120, 138);
   font-size: 14px;
   font-weight: 700;
+}
+.text-custom-card{
+  font-size: 13px;
 }

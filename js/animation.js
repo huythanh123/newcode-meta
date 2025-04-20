@@ -120,3 +120,53 @@ renderTags();
   }
 
   renderTags2();
+
+
+  const categoryList1 = [
+    "United States",
+    "France",
+    "Spain",
+    "Germany",
+    "Italy"
+  ];
+  
+  const selectedCategories1 = new Set();
+  const categoryContainer1 = document.getElementById("category-tags3");
+  
+  function renderTags3() {
+    categoryContainer1.innerHTML = "";
+    categoryList1.forEach((category3) => {
+      const isSelected = selectedCategories1.has(category3);
+  
+      const btn = document.createElement("button");
+      btn.className =
+        "flex items-center justify-between rounded-full px-3 py-1 text-xs mr-2 mb-2 border transition " +
+        (isSelected
+          ? "bg-gray-300 text-white font-medium"
+          : "bg-white text-gray-700 border border-gray-300 hover:bg-gray-100");
+  
+      btn.innerHTML = `
+       <span class="flex items-center">${category3}
+        ${
+          isSelected
+            ? '<svg class="ml-1 text-sm cursor-pointer font-bold" xmlns="http://www.w3.org/2000/svg" height="18px" viewBox="0 -960 960 960" width="18px" fill="currentColor"><path d="M256-213.85 213.85-256l224-224-224-224L256-746.15l224 224 224-224L746.15-704l-224 224 224 224L704-213.85l-224-224-224 224Z"/></svg>'
+            : ""
+        }
+        </span>
+      `;
+  
+      btn.addEventListener("click", () => {
+        if (isSelected) {
+          selectedCategories1.delete(category3);
+        } else {
+          selectedCategories1.add(category3);
+        }
+        renderTags3();
+      });
+  
+      categoryContainer1.appendChild(btn);
+    });
+  }
+  
+  renderTags3();
+  
